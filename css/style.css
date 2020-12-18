@@ -6,14 +6,14 @@
 }
 
 /* Main Styling */
-html, body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7em;
-}
-
 a {
   color: #333;
   text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
 }
 
 h1, h2, h3 {
@@ -25,19 +25,19 @@ p {
 }
 
 /* Utility Classes */
-.container {
-  margin: auto;
-  max-width: 1100px;
-  overflow: auto;
-  padding: 0 20px;
+.bg-dark {
+  background: #333;
+  color: #fff;
 }
 
-.text-primary {
-  color: #f7c08a;
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
 }
 
-.lead {
-  font-size: 20px;
+.bg-primary {
+  background:#f7c08a;
+  color: #333;
 }
 
 .btn {
@@ -60,23 +60,19 @@ p {
   color: #333;
 }
 
-.bg-dark {
-  background: #333;
-  color: #fff;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-primary {
-  background:#f7c08a;
-  color: #333;
-}
-
 .clr {
   clear: both;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.lead {
+  font-size: 20px;
 }
 
 .l-heading {
@@ -84,16 +80,19 @@ p {
   line-height: 1.2;
 }
 
-/* Padding */
 .py-1 { padding: 10px 0; }
 .py-2 { padding: 20px 0; }
 .py-3 { padding: 30px 0; }
+
+.text-primary {
+  color: #f7c08a;
+}
 
 /* Navbar */
 #navbar {
   background: #333;
   color: #fff;
-  /* So, the background will show up no matter what */
+  /* The background color might disappear since we are using float and we can fix that by using overflow: auto; */
   overflow: auto; 
 }
 
@@ -126,10 +125,6 @@ p {
 #navbar ul li a.current {
   background: #444;
   color: #f7c08a;
-}
-
-#navbarNav {
-  margin-left: 700px;
 }
 
 /* Showcase */
@@ -267,7 +262,6 @@ p {
   border-color: #f7c08a;
   outline: none;
 }
-
 
 /* Footer */
 #main-footer {
